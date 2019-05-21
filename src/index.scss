@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 1%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.content {
+  .barraPesquisa {
+    width: 100%;
+    padding: 45px;
+
+    input[type="text"] {
+      width: 90%;
+    }
+  }
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .conteudoInfo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .img {
+        margin-right: 20px;
+        &img {
+          max-width: 160px;
+          max-height: 160px;
+        }
+      }
+
+      .componente {
+        padding-bottom: 5px;
+        label {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
