@@ -11,12 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .content {
+    max-width:1500px;
+    margin: auto;tes
+
+    h2{
+      color: #2d6b00;
+    }
+
+    label{
+      color:#5fa06b;;
+      font-weight: bold;
+    }
+
   .barraPesquisa {
     width: 100%;
     padding: 45px;
 
     input[type="text"] {
       width: 90%;
+      border-radius: 10px;
+      padding: 10px;
     }
   }
   .conteudo {
@@ -39,10 +53,71 @@ code {
 
       .componente {
         padding-bottom: 5px;
-        label {
-          font-weight: bold;
-        }
       }
     }
   }
+
+  .repositorios{    
+      margin-top: 100px;
+
+    .repositorio{
+      display: flex;
+      justify-content: space-around;
+
+      li{
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+
+        label{
+          text-align: left;
+        }
+      }
+
+ 
+    }
+    
+    h2{
+      text-align: center;
+    }
+    
+  }
+  .follo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+
+    .info{
+      display: flex;
+    }    
+
+    .info{
+      display: flex;
+      justify-content: center;
+
+      .dados{
+          margin-top: 0;
+      }
+
+      ul{
+        li{
+          list-style-type: none;
+        }
+      }
+    }    
+
+
+    .img{
+      width: 15%;
+    }  
+
+    img{
+      width: 100%;
+    }
+
+    h2{
+      text-align: center;
+    }
+  }
+  
 }
