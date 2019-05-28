@@ -1,11 +1,16 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
-const BarraPesquisa = () => {
+const BarraPesquisa = ({handleEvent}) => {
     return (
-        <div class="barraPesquisa">
-            <input type="text" placeholder="Pesquisa" />
+        <div className="barraPesquisa">
+            <input type="text" placeholder="Pesquisa" onKeyUp={handleEvent}/>
         </div>
     )
+}
+
+BarraPesquisa.protoTypes = {
+    handleEvent: PropTypes.func.isRequired
 }
 
 export default BarraPesquisa;

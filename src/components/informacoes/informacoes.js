@@ -1,36 +1,51 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
-const Informacoes = () => {
+const Informacoes = ({userInfo}) => {
     return (
-        <div class="conteudo">
-            <h2 class="title">Informações</h2>
-            <div class="conteudoInfo">
-                <div class="img">
+        <div className="conteudo">
+            <h2 className="title">Informações</h2>
+            <div className="conteudoInfo">
+                <div className="img">
                     <img src="https://avatars2.githubusercontent.com/u/18448247?v=4" alt="avatar"/>
                 </div>
-                <div class="info">
-                <div class="nome componente">
-                    <label>Nome:</label> yagoportela
+                <div className="info">
+                <div className="nome componente">
+                        <label>Nome:</label> {userInfo.nome}
                 </div>
-                <div class="id componente">
-                    <label>Id:</label> 18448247
+                <div className="id componente">
+                    <label>Id:</label> {userInfo.id}
                 </div>
-                <div class="url componente">
-                    <label>Url:</label> https://api.github.com/users/yagoportela
+                <div className="url componente">
+                    <label>url:</label> {userInfo.url}
                 </div>
-                <div class="repositorioUrl componente">
-                    <label>Repositorios:</label> https://api.github.com/users/yagoportela/repos
+                <div className="repositorioUrl componente">
+                        <label>Repositorios:</label> {userInfo.repositorioUrl}
                 </div>
-                <div class="followers componente">
-                    <label>Followers:</label> 3
+                <div className="followers componente">
+                    <label>Followers:</label> {userInfo.followers}
                 </div>
-                <div class="following componente">
-                    <label>Following:</label> 4
+                    <div className="following componente">
+                    <label>Following:</label> {userInfo.following}
                 </div>
                 </div>
             </div>
         </div>
     )
 }
+
+
+
+Informacoes.propTypes = {
+    userInfo: PropTypes.shape({
+        nome: PropTypes.string.isRequired,
+        id: PropTypes.number.isRequired,
+        url: PropTypes.string.isRequired,
+        repositorioUrl: PropTypes.string.isRequired,
+        followers: PropTypes.number,
+        following: PropTypes.number
+    })
+}
+
 
 export default Informacoes;

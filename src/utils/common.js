@@ -3,7 +3,10 @@
  * Return JSON
  */
 
-(function ajax(url, callback = () => {}, callbackError = () => {} ){
+const common ={ 
+
+    ajaxRquest: (url, callback = () => {}, callbackError = () => {} ) => {
+        console.log(url);
     fetch(url)
     .then(res => res.json())
     .then(
@@ -15,5 +18,7 @@
         }
         
     )
-    console.log("teste");
-})();
+    }
+};
+
+export default common;

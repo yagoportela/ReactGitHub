@@ -2,23 +2,23 @@ import React from 'react';
 
 const Following = () => {
     return (
-        <div class="following">
+        <div className="following">
             <h2>Seguindo</h2>
-            <div class="info">
-                <div class="img">
+            <div className="info">
+                <div className="img">
                    <img src="https://avatars3.githubusercontent.com/u/8216101?v=4" alt="avatar follow" />
                 </div>
-                <ul class="dados">
-                    <li class="nome">
+                <ul className="dados">
+                    <li className="nome">
                         <label>Nome:</label> kakuzops
                     </li>
-                    <li class="url">
+                    <li className="url">
                         <label>Url:</label> https://github.com/kakuzops
                     </li>
-                    <li class="followers">
+                    <li className="followers">
                         <label>Followers:</label> 3
                     </li>
-                    <li class="following">
+                    <li className="following">
                         <label>Following:</label> 4
                     </li>
                 </ul>
