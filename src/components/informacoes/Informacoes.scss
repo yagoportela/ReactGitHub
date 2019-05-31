@@ -1,0 +1,25 @@
+.content {
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .conteudoInfo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img {
+                margin-right: 20px;
+                img {
+                max-width: 160px;
+                max-height: 160px;
+                }
+            }
+
+            .componente {
+                padding-bottom: 5px;
+            }
+        }
+    }
+}

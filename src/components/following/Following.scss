@@ -1,0 +1,35 @@
+.content {
+  .following{
+    .info{
+      display: flex;
+    }    
+
+    .info{
+      display: flex;
+      justify-content: center;
+
+      .dados{
+          margin-top: 0;
+      }
+
+      ul{
+        li{
+          list-style-type: none;
+        }
+      }
+    }    
+
+
+    .img{
+      width: 15%;
+    }  
+
+    img{
+      width: 100%;
+    }
+
+    h2{
+      text-align: center;
+    }
+  }
+}

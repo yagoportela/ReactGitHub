@@ -1,0 +1,25 @@
+.content{
+    .repositorios{    
+      margin-top: 100px;
+
+    .repositorio{
+      display: flex;
+      justify-content: space-around;
+
+      li{
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+
+        label{
+          text-align: left;
+        }
+      }
+    }
+    
+    h2{
+      text-align: center;
+    }
+    
+  }
+}

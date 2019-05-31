@@ -1,30 +1,38 @@
 import React from 'react';
+import './Following.scss'
 
-const Following = () => {
-    return (
-        <div className="following">
-            <h2>Seguindo</h2>
-            <div className="info">
-                <div className="img">
-                   <img src="https://avatars3.githubusercontent.com/u/8216101?v=4" alt="avatar follow" />
-                </div>
-                <ul className="dados">
-                    <li className="nome">
-                        <label>Nome:</label> kakuzops
-                    </li>
-                    <li className="url">
-                        <label>Url:</label> https://github.com/kakuzops
-                    </li>
-                    <li className="followers">
-                        <label>Followers:</label> 3
-                    </li>
-                    <li className="following">
-                        <label>Following:</label> 4
-                    </li>
-                </ul>
+const Following = ({ following }) => {
+    if (following.length > 0) {
+        return (
+            <div className="following">
+                <h2>Seguindo</h2>
+                {following.map((valor, index) => (
+                    <div key={index} className="info">
+                        <div className="img">
+                            <img src={valor.avatar} alt="avatar follow" />
+                        </div>
+                        <ul className="dados">
+                            <li className="nome">
+                                <label>Nome:</label> {valor.nome}
+                            </li>
+                            <li className="id">
+                                <label>Id:</label> {valor.id}
+                            </li>
+                            <li className="url">
+                                <label>Url:</label> {valor.url}
+                            </li>
+                        </ul>
+                    </div>
+                ))}
             </div>
-        </div>
-    )
+        )
+    }
+
+    return null;
+}
+
+Following.defaultProps = {
+    following: []
 }
 
 export default Following;
